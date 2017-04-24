@@ -9,7 +9,7 @@ search_string=$1
 command=$2
 
 echo "about to run command"
-nohup spotify >/dev/null&
+nohup $command >/dev/null&
 echo "Polling wmctrl for window id..."
 
 # Find all webstorm window IDs and save them to a variable
