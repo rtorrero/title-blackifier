@@ -12,7 +12,7 @@ echo "about to run command"
 nohup $command >/dev/null&
 echo "Polling wmctrl for window id..."
 
-# Find all webstorm window IDs and save them to a variable
+# Find all target window IDs and save them to a variable
 instances=$(wmctrl -l | grep $search_string | cut -d" " -f1 | wc -l)
 while [ $instances -le 0 ]
 do
