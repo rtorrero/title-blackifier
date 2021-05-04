@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#some comment
 if [ $# -ne 2 ]; then
 	echo "$0: usage: title-blackifier.sh <search string> <command>"
 	exit 1
